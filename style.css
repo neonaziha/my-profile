@@ -1,0 +1,172 @@
+/*Colors and Fonts */
+body {
+  background: #F7F9FC;
+  color: #575F7D;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+h1, h2, h3 {
+  font-family: 'Lora', serif;
+}
+
+h1 {
+  color: #CCA8E9;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+h2 {
+  color: #7ECE90;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(50, 50, 50);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+a:hover {
+  color: black;
+}
+
+
+
+/*Custom design with class */
+
+.container {
+  width: 700px;
+  margin: 40px auto;
+}
+.card-white {
+  background: white;
+  padding: 40px;
+  margin: 20px 0px;
+  text-align: center;
+  box-shadow: 0px 10px 30px rgb(0 0 0 / 10%);
+  border-radius: 5;
+  border-style: none;
+;
+}
+
+.card-white:hover {
+  background: #CADEFC;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.btn-purple {
+  background-color: #CCA8E9;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+
+.btn-purple:hover {
+  background-color: black;
+  color: white;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-inline li {
+  display: inline;
+  padding: 10px;
+}
+
+.list-inline i {
+  font-size: 50px;
+  color: rgb(230, 230, 230);
+}
+
+.list-inline i:hover {
+  color: black
+}
+
+/*Design adjustments with id */
+#introduction p {
+  margin-bottom: 40px;
+}
+
+/*Media query */
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  .container {
+    width: 300px;
+  }
+}
+
+/*Design adjustments sidebar */
+.page-content {
+  margin-left: 200px;
+}
+
+/* The side navigation menu */
+.sidebar {
+  position: fixed;
+  width: 200px;
+  margin: 0;
+  height: 50%;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+  width: 160px;
+  border: 1px solid #555;
+}
+
+.sidebar li a {
+  display: block;
+  color: #575F7D;
+  padding: 8px 16px;
+}
+
+.sidebar li a:hover {
+  background-color: #CADEFC;
+  color: rgb(30, 30, 30);
+}
+
+.sidebar li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+
+/*Media query sidebar - reference: https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp */
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
